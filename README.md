@@ -1,3 +1,7 @@
+# Redux, Redux SAGA, fsa各ライブラリでの書き方テスト用
+Redux, Redux SAGA, fsa等の動作確認用プロジェクト。
+ハンズオンチェック・確認用なので書き方はまだmessyです。
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
