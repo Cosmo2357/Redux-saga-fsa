@@ -1,26 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import  SubPage  from './pages/SubPage';
+import  MainPage  from './pages/MainPage';
+import TopPage  from './pages/TopPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const  App: React.FC = () => {
+  // make router to work with react-router-dom
+return(
+  <>
+   <BrowserRouter>
+        <div className="App">
+
+
+          <Routes>
+            <Route path="/" element={<TopPage />} />
+            <Route path="main" element={<MainPage />} />
+            <Route path="sub" element={<SubPage />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+  </>
+)
+   
 }
 
 export default App;
